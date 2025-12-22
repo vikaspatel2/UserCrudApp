@@ -1,0 +1,10 @@
+﻿@model UserCrudApp.Models.Users
+
+<div class="w-50 mx-auto">
+    <h2 class="text-danger my-4">Are you sure you want to delete your account?</h2>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

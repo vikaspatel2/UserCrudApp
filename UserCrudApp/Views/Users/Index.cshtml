@@ -1,0 +1,24 @@
+﻿@model UserCrudApp.Models.Users
+
+<h2 class="my-4">My Profile</h2>
+<table class="table table-bordered table-striped w-50 mx-auto">
+    <tr>
+        <th>Username</th>
+        <td>@Model.UserName</td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td>@Model.Email</td>
+    </tr>
+    <tr>
+        <th>Role</th>
+        <td>@Model.Role</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="text-center">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary btn-sm mx-1">Edit</a>
+            <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger btn-sm mx-1">Delete</a>
+            <a asp-action="ChangePassword" class="btn btn-warning btn-sm mx-1">Change Password</a>
+        </td>
+    </tr>
+</table>

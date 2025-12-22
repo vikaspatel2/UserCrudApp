@@ -1,0 +1,566 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\views\\users\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\views\\users\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\views\\admin\\allusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\views\\admin\\allusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\views\\admin\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\views\\admin\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\views\\admin\\deleteuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\views\\admin\\deleteuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\models\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\models\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\usercrudapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\usercrudapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 53,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1961808783:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:149:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:150:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:151:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:152:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:153:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:154:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:148:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2034310101:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:30909877:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1816525380:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2041195094:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1068117175:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EditUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Admin\\EditUser.cshtml",
+              "RelativeDocumentMoniker": "UserCrudApp\\Views\\Admin\\EditUser.cshtml",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Admin\\EditUser.cshtml",
+              "RelativeToolTip": "UserCrudApp\\Views\\Admin\\EditUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-22T11:03:34.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AllUsers.cshtml",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Admin\\AllUsers.cshtml",
+              "RelativeDocumentMoniker": "UserCrudApp\\Views\\Admin\\AllUsers.cshtml",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Admin\\AllUsers.cshtml",
+              "RelativeToolTip": "UserCrudApp\\Views\\Admin\\AllUsers.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-22T11:03:20.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "UserCrudApp\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "UserCrudApp\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T11:02:28.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Users\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "UserCrudApp\\Views\\Users\\ChangePassword.cshtml",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Users\\ChangePassword.cshtml",
+              "RelativeToolTip": "UserCrudApp\\Views\\Users\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-22T10:50:02.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChangePasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Models\\ChangePasswordViewModel.cs",
+              "RelativeDocumentMoniker": "UserCrudApp\\Models\\ChangePasswordViewModel.cs",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Models\\ChangePasswordViewModel.cs",
+              "RelativeToolTip": "UserCrudApp\\Models\\ChangePasswordViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T10:48:08.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "UserCrudApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "UserCrudApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-22T10:36:10.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "UserCrudApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "UserCrudApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-22T09:12:01.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "UserCrudApp\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "UserCrudApp\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAiwKAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T07:21:29.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "UserCrudApp\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "UserCrudApp\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-22T07:19:16.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "UserCrudApp\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "UserCrudApp\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwDAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T07:13:49.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DeleteUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Admin\\DeleteUser.cshtml",
+              "RelativeDocumentMoniker": "UserCrudApp\\Views\\Admin\\DeleteUser.cshtml",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Admin\\DeleteUser.cshtml",
+              "RelativeToolTip": "UserCrudApp\\Views\\Admin\\DeleteUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-22T11:03:46.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "UserCrudApp\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "UserCrudApp\\Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T07:13:09.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\appsettings.json",
+              "RelativeDocumentMoniker": "UserCrudApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\appsettings.json",
+              "RelativeToolTip": "UserCrudApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-22T06:32:25.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "UserCrudApp\\Views\\Users\\Index.cshtml",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "UserCrudApp\\Views\\Users\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-22T07:22:28.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Users\\Edit.cshtml",
+              "RelativeDocumentMoniker": "UserCrudApp\\Views\\Users\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Users\\Edit.cshtml",
+              "RelativeToolTip": "UserCrudApp\\Views\\Users\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-22T07:22:43.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Users\\Delete.cshtml",
+              "RelativeDocumentMoniker": "UserCrudApp\\Views\\Users\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Users\\Delete.cshtml",
+              "RelativeToolTip": "UserCrudApp\\Views\\Users\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-22T07:22:56.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "UserCrudApp\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "UserCrudApp\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-22T07:19:36.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserCrudApp",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\UserCrudApp.csproj",
+              "RelativeDocumentMoniker": "UserCrudApp\\UserCrudApp.csproj",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\UserCrudApp.csproj",
+              "RelativeToolTip": "UserCrudApp\\UserCrudApp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-22T07:07:47.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "UserCrudApp\\Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "UserCrudApp\\Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T07:12:10.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Program.cs",
+              "RelativeDocumentMoniker": "UserCrudApp\\Program.cs",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Program.cs",
+              "RelativeToolTip": "UserCrudApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T06:37:51.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "UserCrudApp\\Models\\Users.cs",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Models\\Users.cs",
+              "RelativeToolTip": "UserCrudApp\\Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T06:32:54.167Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1318,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

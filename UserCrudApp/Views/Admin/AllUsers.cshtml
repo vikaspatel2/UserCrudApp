@@ -1,0 +1,27 @@
+﻿@model IEnumerable<UserCrudApp.Models.Users>
+
+<h2>All Users</h2>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var u in Model)
+        {
+            <tr>
+                <td>@u.UserName</td>
+                <td>@u.Email</td>
+                <td>@u.Role</td>
+                <td>
+                    <a asp-action="EditUser" asp-route-id="@u.Id" class="btn btn-primary btn-sm">Edit</a>
+                    <a asp-action="DeleteUser" asp-route-id="@u.Id" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

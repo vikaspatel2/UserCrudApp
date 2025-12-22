@@ -1,0 +1,21 @@
+﻿@model UserCrudApp.Models.Users
+
+<h2 class="my-4">Edit Profile</h2>
+<form asp-action="Edit" class="w-50 mx-auto">
+    <input type="hidden" asp-for="Id" />
+    <div class="mb-3">
+        <label asp-for="UserName" class="form-label"></label>
+        <input asp-for="UserName" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Role" class="form-label"></label>
+        <input asp-for="Role" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    @Html.ValidationSummary()
+</form>
