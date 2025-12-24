@@ -149,3 +149,4 @@ C:\Users\vikas\source\repos\UserCrudApp\UserCrudApp\obj\Debug\net8.0\refint\User
 C:\Users\vikas\source\repos\UserCrudApp\UserCrudApp\obj\Debug\net8.0\UserCrudApp.pdb
 C:\Users\vikas\source\repos\UserCrudApp\UserCrudApp\obj\Debug\net8.0\UserCrudApp.genruntimeconfig.cache
 C:\Users\vikas\source\repos\UserCrudApp\UserCrudApp\obj\Debug\net8.0\ref\UserCrudApp.dll
+C:\Users\vikas\source\repos\UserCrudApp\UserCrudApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

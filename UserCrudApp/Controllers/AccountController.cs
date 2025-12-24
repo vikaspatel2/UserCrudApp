@@ -181,7 +181,7 @@ namespace UserCrudApp.Controllers
         // POST: /Account/Enable2FA
         [HttpPost]
         [Authorize]
-        public IActionResult Enable2FA(string code)
+        public async Task<IActionResult> Enable2FA(string code)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var user = _context.Users.Find(int.Parse(userId));
@@ -208,8 +208,12 @@ namespace UserCrudApp.Controllers
                 return View();
             }
 
-            user.TwoFactorEnabled = true;
-            _context.SaveChanges();
+            await _context.Database.ExecuteSqlRawAsync(
+                "EXEC Usp_UpdateUserTwoFactor @p0, @p1, @p2",
+                user.Id,
+                user.AuthenticatorKey,
+                true
+            );
 
             return View("Enable2FAFinished");
         }

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\controllers\\api\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\controllers\\api\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|solutionrelative:usercrudapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F853F16-2FC7-4E42-B81C-561A62E24E1A}|UserCrudApp\\UserCrudApp.csproj|c:\\users\\vikas\\source\\repos\\usercrudapp\\usercrudapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 44,
+          "SelectedChildIndex": 50,
           "Children": [
             {
               "$type": "Bookmark",
@@ -289,37 +289,21 @@
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Program.cs",
-              "RelativeDocumentMoniker": "UserCrudApp\\Program.cs",
-              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Program.cs",
-              "RelativeToolTip": "UserCrudApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T06:37:51.813Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "UserCrudApp\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Controllers\\AccountController.cs",
               "RelativeToolTip": "UserCrudApp\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAP4AAAAAAAAAAAAwwBQBAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAwwA0BAAB4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-22T07:13:49.811Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Enable2FA.cshtml",
               "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Account\\Enable2FA.cshtml",
               "RelativeDocumentMoniker": "UserCrudApp\\Views\\Account\\Enable2FA.cshtml",
@@ -331,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UsersApiController.cs",
               "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Controllers\\Api\\UsersApiController.cs",
               "RelativeDocumentMoniker": "UserCrudApp\\Controllers\\Api\\UsersApiController.cs",
@@ -339,12 +323,11 @@
               "RelativeToolTip": "UserCrudApp\\Controllers\\Api\\UsersApiController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T11:23:30.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T11:23:30.096Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "UserCrudApp\\Views\\Shared\\_Layout.cshtml",
@@ -356,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Login2FA.cshtml",
               "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Account\\Login2FA.cshtml",
               "RelativeDocumentMoniker": "UserCrudApp\\Views\\Account\\Login2FA.cshtml",
@@ -368,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Models\\Users.cs",
               "RelativeDocumentMoniker": "UserCrudApp\\Models\\Users.cs",
@@ -380,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "UserCrudApp\\Data\\ApplicationDbContext.cs",
@@ -392,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "UserCrudApp\\Controllers\\UsersController.cs",
@@ -404,7 +387,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\appsettings.json",
+              "RelativeDocumentMoniker": "UserCrudApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\appsettings.json",
+              "RelativeToolTip": "UserCrudApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-22T06:32:25.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Program.cs",
+              "RelativeDocumentMoniker": "UserCrudApp\\Program.cs",
+              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Program.cs",
+              "RelativeToolTip": "UserCrudApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T06:37:51.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "UserCrudApp\\Controllers\\AdminController.cs",
@@ -416,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "TokenController.cs",
               "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Controllers\\Api\\TokenController.cs",
               "RelativeDocumentMoniker": "UserCrudApp\\Controllers\\Api\\TokenController.cs",
@@ -428,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ChangePassword.cshtml",
               "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\Views\\Users\\ChangePassword.cshtml",
               "RelativeDocumentMoniker": "UserCrudApp\\Views\\Users\\ChangePassword.cshtml",
@@ -437,18 +445,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-22T10:50:02.223Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\appsettings.json",
-              "RelativeDocumentMoniker": "UserCrudApp\\appsettings.json",
-              "ToolTip": "C:\\Users\\vikas\\source\\repos\\UserCrudApp\\UserCrudApp\\appsettings.json",
-              "RelativeToolTip": "UserCrudApp\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-22T06:32:25.222Z"
             },
             {
               "$type": "Document",
