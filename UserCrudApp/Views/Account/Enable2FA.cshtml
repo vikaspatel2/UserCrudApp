@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Enable Two-Factor Authentication";
+}
+<h2>@ViewBag.Title</h2>
+<p>Scan this QR code with Google Authenticator or Authy:</p>
+<img src="@ViewBag.QrCodeImage" alt="2FA QR code" />
+<p>Or manually enter this code: <b>@ViewBag.SharedKey</b></p>
+<form asp-action="Enable2FA" method="post">
+    <label>Enter the 6-digit code from your authenticator app:</label>
+    <input name="code" type="text" maxlength="6" />
+    <button type="submit">Enable 2FA</button>
+</form>
+@if (ViewBag.Error != null)
+{
+    <span class="text-danger">@ViewBag.Error</span>
+}

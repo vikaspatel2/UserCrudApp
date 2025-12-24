@@ -18,23 +18,43 @@ namespace UserCrudApp.Controllers
         }
 
         // List all users
-        public async Task<IActionResult> AllUsers()
+        public async Task<IActionResult> AllUsers(string searchString, int page = 1, int pageSize = 10)
         {
-            var users = await _context.Users
+            var users = _context.Users
                 .FromSqlRaw("EXEC Usp_GetAllUsers")
                 .AsNoTracking()
-                .ToListAsync();
-            return View(users);
+                .AsEnumerable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                users = users.Where(u =>
+                    (u.UserName != null && u.UserName.Contains(searchString, StringComparison.OrdinalIgnoreCase)) ||
+                    (u.Email != null && u.Email.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+                );
+            }
+
+            var totalUsers = users.Count();
+            var pagedUsers = users
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            ViewBag.CurrentPage = page;
+            ViewBag.TotalPages = (int)Math.Ceiling(totalUsers / (double)pageSize);
+            ViewBag.SearchString = searchString;
+
+            return View(pagedUsers);
         }
 
         // Edit any user
         public async Task<IActionResult> EditUser(int? id)
         {
             if (id == null) return BadRequest();
-            var user = await _context.Users
+            var user =  _context.Users
                 .FromSqlRaw("EXEC Usp_GetUserById @p0", id)
                 .AsNoTracking()
-                .FirstOrDefaultAsync();
+                .AsEnumerable()
+                .FirstOrDefault();
             if (user == null) return NotFound();
             return View(user);
         }
@@ -47,10 +67,11 @@ namespace UserCrudApp.Controllers
                 return BadRequest();
 
             // Keep password as-is
-            var user = await _context.Users
+            var user =  _context.Users
                 .FromSqlRaw("EXEC Usp_GetUserById @p0", id)
                 .AsNoTracking()
-                .FirstOrDefaultAsync();
+                .AsEnumerable()
+                .FirstOrDefault();
 
             if (user == null) return NotFound();
 
@@ -71,10 +92,11 @@ namespace UserCrudApp.Controllers
         public async Task<IActionResult> DeleteUser(int? id)
         {
             if (id == null) return BadRequest();
-            var user = await _context.Users
+            var user =  _context.Users
                 .FromSqlRaw("EXEC Usp_GetUserById @p0", id)
                 .AsNoTracking()
-                .FirstOrDefaultAsync();
+                .AsEnumerable()
+                .FirstOrDefault();
             if (user == null) return NotFound();
             return View(user);
         }

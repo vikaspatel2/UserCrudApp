@@ -181,34 +181,34 @@ namespace UserCrudApp.Controllers
             return View();
         }
 
-        private bool IsAdmin()
-        {
-            return User.IsInRole("Admin"); // Role claim, already set at login
-        }
+        //private bool IsAdmin()
+        //{
+        //    return User.IsInRole("Admin"); // Role claim, already set at login
+        //}
 
-        // List all users (admin only)
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> AllUsers()
-        {
-            var users = await _context.Users
-                .FromSqlRaw("EXEC Usp_GetAllUsers")
-                .AsNoTracking()
-                .ToListAsync();
-            return View(users);
-        }
+        //// List all users (admin only)
+        //[Authorize(Roles = "Admin")]
+        //public async Task<IActionResult> AllUsers()
+        //{
+        //    var users = await _context.Users
+        //        .FromSqlRaw("EXEC Usp_GetAllUsers")
+        //        .AsNoTracking()
+        //        .ToListAsync();
+        //    return View(users);
+        //}
 
-        // Edit any user (admin only)
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> EditUser(int? id)
-        {
-            if (id == null) return BadRequest();
-            var user = await _context.Users
-                .FromSqlRaw("EXEC Usp_GetUserById @p0", id)
-                .AsNoTracking()
-                .FirstOrDefaultAsync();
-            if (user == null) return NotFound();
-            return View(user);
-        }
+        //// Edit any user (admin only)
+        //[Authorize(Roles = "Admin")]
+        //public async Task<IActionResult> EditUser(int? id)
+        //{
+        //    if (id == null) return BadRequest();
+        //    var user = await _context.Users
+        //        .FromSqlRaw("EXEC Usp_GetUserById @p0", id)
+        //        .AsNoTracking()
+        //        .FirstOrDefaultAsync();
+        //    if (user == null) return NotFound();
+        //    return View(user);
+        //}
 
         //[HttpPost]
         //[Authorize(Roles = "Admin")]

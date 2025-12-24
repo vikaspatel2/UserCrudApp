@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Two-Factor Login";
+}
+
+<h2>@ViewBag.Title</h2>
+<form asp-action="Login2FA" method="post">
+    <label>Authenticator App Code:</label>
+    <input name="code" type="text" maxlength="6" required />
+    <button type="submit">Login</button>
+</form>
+@if (ViewBag.Error != null)
+{
+    <span class="text-danger">@ViewBag.Error</span>
+}

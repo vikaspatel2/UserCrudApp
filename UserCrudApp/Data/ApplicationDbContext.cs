@@ -9,6 +9,12 @@ namespace UserCrudApp.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options) { }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Users>()
+                .ToTable("tbl_Users", "dbo");
+        }
+
         public DbSet<Users> Users { get; set; }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace UserCrudApp.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace UserCrudApp.Models
 {
     public class Users
     {
@@ -14,6 +16,11 @@
         public DateTime? lmodifydt { get; set; }
         public int? deluid { get; set; }
         public DateTime? deldt { get; set; }
+        [NotMapped]
+        public bool TwoFactorEnabled { get; set; }
+        [NotMapped]
+        public string? AuthenticatorKey { get; set; }
+
     }
 
 }

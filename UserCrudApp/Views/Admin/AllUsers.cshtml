@@ -1,6 +1,19 @@
 ﻿@model IEnumerable<UserCrudApp.Models.Users>
+@{
+    var currentPage = ViewBag.CurrentPage as int? ?? 1;
+    var totalPages = ViewBag.TotalPages as int? ?? 1;
+    var searchString = ViewBag.SearchString as string ?? "";
+}
 
 <h2>All Users</h2>
+
+<form asp-action="AllUsers" method="get" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="searchString" value="@searchString" class="form-control" placeholder="Search by name or email" />
+        <button class="btn btn-primary" type="submit">Search</button>
+    </div>
+</form>
+
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
@@ -25,3 +38,14 @@
         }
     </tbody>
 </table>
+
+<nav>
+    <ul class="pagination">
+        @for (int i = 1; i <= totalPages; i++)
+        {
+            <li class="page-item @(i == currentPage ? "active" : "")">
+                <a class="page-link" asp-action="AllUsers" asp-route-page="@i" asp-route-searchString="@searchString">@i</a>
+            </li>
+        }
+    </ul>
+</nav>
