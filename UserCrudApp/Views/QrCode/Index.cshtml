@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "QR Generator";
+}
+<h2>QR Generator</h2>
+<form method="post">
+    <label>Text or Link:</label>
+    <input type="text" name="qrdata" value="@ViewBag.Text" style="width: 400px;" />
+    <button type="submit">Generate QR</button>
+</form>
+@if (ViewBag.QR != null)
+{
+    <img src="@ViewBag.QR" alt="QR Code" style="width:300px;height:300px;" />
+    <p>Scan to see: <b>@ViewBag.Text</b></p>
+}

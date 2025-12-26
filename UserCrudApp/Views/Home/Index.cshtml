@@ -1,8 +1,84 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "Dashboard";
 }
+<div class="container py-5">
+    <h2>Welcome, @User.Identity.Name ?? "Guest"</h2>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card mb-3">
+                <div class="card-header">Quick Actions</div>
+                <div class="card-body">
+                    <a href="/Users/Index" class="btn btn-info me-2">My Profile</a>
+                    @* <a href="/Admin/AllUsers" class="btn btn-secondary me-2">All Users (Admin Only)</a> *@
+                    <a href="/QrCode" class="btn btn-outline-success">Generate QR</a>
+                </div>
+            </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+            @if (User.IsInRole("Admin"))
+            {
+                <a href="/Admin/AllUsers" class="btn btn-secondary me-2">All Users (Admin Only)</a>
+                <div class="row my-4">
+                    <div class="col-md-3">
+                        <div class="card bg-primary text-white text-center">
+                            <div class="card-body">
+                                <h2>@ViewBag.UserCount</h2>
+                                <p>Registered Users</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-success text-white text-center">
+                            <div class="card-body">
+                                <h2>@ViewBag.ApiUsage</h2>
+                                <p>API Calls</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @if (ViewBag.RecentUsers != null)
+                {
+                    <h4>Newest Users</h4>
+                    <ul>
+                        @foreach (var u in ViewBag.RecentUsers)
+                        {
+                            <li>@u.UserName (@u.Email)</li>
+                        }
+                    </ul>
+                }
+            }
+
+            @* 
+            <div class="row my-4">
+                <div class="col-md-3">
+                    <div class="card bg-primary text-white text-center">
+                        <div class="card-body">
+                            <h2>@ViewBag.UserCount</h2>
+                            <p>Registered Users</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-success text-white text-center">
+                        <div class="card-body">
+                            <h2>@ViewBag.ApiUsage</h2>
+                            <p>API Calls</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="alert alert-info">Tip: Click "All Users" to view all Active Users!</div>
+        </div>
+        @if (ViewBag.RecentUsers != null)
+        {
+            <h4>Newest Users</h4>
+            <ul>
+                @foreach (var u in ViewBag.RecentUsers)
+                {
+                    <li>@u.UserName (@u.Email)</li>
+                }
+            </ul>
+        } *@
+    </div>
 </div>

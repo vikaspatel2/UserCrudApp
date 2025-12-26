@@ -53,6 +53,15 @@ public class TokenController : ControllerBase
             signingCredentials: creds
         );
 
+        _context.ApiLog.Add(new ApiLog
+        {
+            Path = Request.Path,
+            Method = Request.Method,
+            User = User.Identity?.Name ?? "Anonymous",
+            TimeStamp = DateTime.UtcNow
+        });
+        _context.SaveChanges();
+
         return Ok(new
         {
             token = new JwtSecurityTokenHandler().WriteToken(token)

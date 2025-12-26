@@ -16,5 +16,7 @@ namespace UserCrudApp.Data
         }
 
         public DbSet<Users> Users { get; set; }
+
+        public DbSet<ApiLog> ApiLog { get; set; }
     }
 }

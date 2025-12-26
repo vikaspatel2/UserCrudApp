@@ -55,6 +55,14 @@
                         {
                             <a asp-controller="Account" asp-action="Enable2FA" class="btn btn-warning">Enable Two-Factor Authentication</a>
                         }
+
+                        @if (TempData["StatusMessage"] != null)
+                        {
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                @TempData["StatusMessage"]
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        }
                         
                     </ul>
                 </div>

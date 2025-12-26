@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using UserCrudApp.Data;
+using UserCrudApp.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -98,6 +99,8 @@ app.UseSwaggerUI();
 
 
 app.UseHealthChecks("/health");
+
+app.UseMiddleware<ApiLoggingMiddleware>();
 
 app.MapControllerRoute(
     name: "default",

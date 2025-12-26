@@ -123,16 +123,17 @@ namespace UserCrudApp.Controllers
         [Authorize]
         public IActionResult Enable2FA()
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var user = _context.Users.Find(int.Parse(userId));
+            var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            var user = _context.Users.Find(userId);
 
             if (user.TwoFactorEnabled)
                 return View("AlreadyEnabled2FA");
 
             if (string.IsNullOrEmpty(user.AuthenticatorKey))
             {
-                var secretBytes = KeyGeneration.GenerateRandomKey(20);
-                user.AuthenticatorKey = Base32Encoding.ToString(secretBytes);
+                user.AuthenticatorKey = Base32Encoding.ToString(
+                    KeyGeneration.GenerateRandomKey(20)
+                );
                 _context.SaveChanges();
             }
 
@@ -154,69 +155,38 @@ namespace UserCrudApp.Controllers
 
 
 
-        //// POST: /Account/Enable2FA
-        //[HttpPost]
-        //public IActionResult Enable2FA(string code)
-        //{
-        //    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-        //    var user = _context.Users.Find(int.Parse(userId));
-        //    var totp = new OtpNet.Totp(OtpNet.Base32Encoding.ToBytes(user.AuthenticatorKey));
-        //    bool isValid = totp.VerifyTotp(code, out long _);
-
-        //    if (isValid)
-        //    {
-        //        user.TwoFactorEnabled = true;
-        //        _context.SaveChanges();
-        //        ViewBag.Message = "Two-Factor Authentication enabled! Next login will require code from your app.";
-        //        return View("Enable2FAFinished");
-        //    }
-        //    else
-        //    {
-        //        ViewBag.SharedKey = user.AuthenticatorKey;
-        //        ViewBag.QrCodeImage = ViewBag.QrCodeImage; // Regenerate this as above if needed
-        //        ViewBag.Error = "Invalid code, retry!";
-        //        return View();
-        //    }
-        //}
         // POST: /Account/Enable2FA
         [HttpPost]
         [Authorize]
-        public async Task<IActionResult> Enable2FA(string code)
+        public IActionResult Enable2FA(string code)
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var user = _context.Users.Find(int.Parse(userId));
+
+            var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            var user = _context.Users.Find(userId); // NO AsNoTracking
+            Console.WriteLine("KEY FROM DB = " + user.AuthenticatorKey);
 
             if (string.IsNullOrEmpty(user.AuthenticatorKey))
             {
-                ModelState.AddModelError("", "Session expired. Please reload the QR page.");
+                TempData["Error"] = "Session expired. Please re-scan QR code.";
                 return RedirectToAction("Enable2FA");
             }
 
-            var totp = new Totp(
-                Base32Encoding.ToBytes(user.AuthenticatorKey)
-            );
+            var totp = new Totp(Base32Encoding.ToBytes(user.AuthenticatorKey));
 
-            bool isValid = totp.VerifyTotp(
-                code?.Trim(),
-                out _,
-                VerificationWindow.RfcSpecifiedNetworkDelay
-            );
-
-            if (!isValid)
+            if (!totp.VerifyTotp(code?.Trim(), out _, VerificationWindow.RfcSpecifiedNetworkDelay))
             {
-                ViewBag.Error = "Invalid code, please try again.";
+                ViewBag.Error = "Invalid code.";
                 return View();
             }
 
-            await _context.Database.ExecuteSqlRawAsync(
-                "EXEC Usp_UpdateUserTwoFactor @p0, @p1, @p2",
-                user.Id,
-                user.AuthenticatorKey,
-                true
-            );
+            user.TwoFactorEnabled = true;
+            _context.SaveChanges();
 
             return View("Enable2FAFinished");
         }
+
+
+
 
 
 
@@ -313,6 +283,19 @@ namespace UserCrudApp.Controllers
             }
             ViewBag.Error = "Invalid code.";
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Users user)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Users.Add(user);
+                _context.SaveChanges();
+                TempData["StatusMessage"] = "User created successfully!";
+                return RedirectToAction("List"); // Or wherever you want
+            }
+            return View(user);
         }
 
     }
