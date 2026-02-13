@@ -1,15 +1,17 @@
-﻿
-@model UserCrudApp.Models.RegisterViewModel
+﻿@model UserCrudApp.Models.RegisterViewModel
 
 <h2 class="my-4 text-center">Register</h2>
 <form asp-action="Register" class="w-50 mx-auto">
     <div class="mb-3">
-        <label asp-for="UserName" class="form-label"></label>
-        <input asp-for="UserName" class="form-control" placeholder="Username" />
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" id="email" class="form-control" placeholder="Email" />
     </div>
     <div class="mb-3">
-        <label asp-for="Email" class="form-label"></label>
-        <input asp-for="Email" class="form-control" placeholder="Email" />
+        <button type="button" id="suggest-btn" class="btn btn-sm btn-outline-primary mb-2">Suggest Username</button>
+    </div>
+    <div class="mb-3">
+        <label asp-for="UserName" class="form-label"></label>
+        <input asp-for="UserName" id="userName" class="form-control" placeholder="Username" />
     </div>
     <div class="mb-3">
         <label asp-for="Password" class="form-label"></label>
@@ -23,3 +25,25 @@
     <a asp-action="Login" class="btn btn-link">Already have an account?</a>
     @Html.ValidationSummary()
 </form>
+
+<script>
+    document.getElementById("suggest-btn").onclick = function() {
+        var email = document.getElementById("email").value;
+        if (!email) { alert("Please enter email first"); return; }
+
+        fetch('/Users/SuggestName', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(email)
+        })
+        .then(r => r.json())
+        .then(d => {
+            if (d.error) {
+                alert("AI Error: " + d.error);
+                return;
+            }
+            document.getElementById("userName").value = d.suggestion;
+        })
+        .catch(err => alert("Suggestion error: " + err));
+    };
+</script>

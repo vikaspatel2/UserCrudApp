@@ -2,11 +2,14 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using OtpNet;
+using System.Data;
 using System.Security.Claims;
 using System.Text;
 using UserCrudApp.Data;
+using UserCrudApp.Helpers;
 using UserCrudApp.Models;
 
 namespace UserCrudApp.Controllers
@@ -59,6 +62,8 @@ namespace UserCrudApp.Controllers
 
                 );
 
+                EmailQueuePublisher.PublishEmail(model.Email);
+
                 return RedirectToAction("Login");
             }
             return View(model);
@@ -80,8 +85,8 @@ namespace UserCrudApp.Controllers
                     .AsEnumerable()
                     .FirstOrDefault();
 
+                
                 if (user != null
-                    && user.deldt == null
                     && BCrypt.Net.BCrypt.Verify(model.Password, user.PasswordHash))
                 {
                     // Only trigger 2FA if enabled and AuthenticatorKey is present
@@ -115,6 +120,16 @@ namespace UserCrudApp.Controllers
 
         public async Task<IActionResult> Logout()
         {
+            int userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var user = _context.Users
+            .FromSqlRaw("EXEC Usp_GetUserById @p0", userId)
+            .AsNoTracking()
+            .AsEnumerable()
+                    .FirstOrDefault();
+
+            HttpContext.SignOutAsync();
+
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Login");
         }
@@ -298,5 +313,7 @@ namespace UserCrudApp.Controllers
             return View(user);
         }
 
+
+         
     }
 }

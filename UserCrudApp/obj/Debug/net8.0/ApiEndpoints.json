@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "UserCrudApp.Controllers.TicketsController",
+    "Method": "Index",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TokenController",
     "Method": "Login",
     "RelativePath": "api/Token",
@@ -19,6 +29,32 @@
     "ContainingType": "UsersApiController",
     "Method": "GetAll",
     "RelativePath": "api/UsersApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserCrudApp.Controllers.TicketsController",
+    "Method": "Details",
+    "RelativePath": "Details/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserCrudApp.Controllers.TicketsController",
+    "Method": "All",
+    "RelativePath": "Tickets/All",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

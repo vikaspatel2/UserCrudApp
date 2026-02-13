@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  usercrudapp:
+    build:
+      context: .
+      dockerfile: UserCrudApp/Dockerfile
+    ports:
+      - "5000:8080"
+    depends_on:
+      - sqlserver
+    environment:
+      - ConnectionStrings__DefaultConnection=${DB_CONNECTION}
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    environment:
+      SA_PASSWORD: ${SA_PASSWORD}
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"

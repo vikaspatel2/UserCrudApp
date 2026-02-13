@@ -6,10 +6,11 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using UserCrudApp.Data;
 using UserCrudApp.Models;
+using UserCrudApp.Services;
 
 namespace UserCrudApp.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class UsersController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -30,7 +31,7 @@ namespace UserCrudApp.Controllers
                 .AsEnumerable()
                 .FirstOrDefault();
 
-            if (user == null || user.deldt != null)
+            if (user == null )
                 return NotFound();
 
             return View(user);
@@ -50,7 +51,7 @@ namespace UserCrudApp.Controllers
                 .FirstOrDefault();
             //.FirstOrDefaultAsync();
 
-            if (user == null || user.deldt != null)
+            if (user == null )
                 return NotFound();
 
             return View(user);
@@ -268,6 +269,20 @@ namespace UserCrudApp.Controllers
         //    return RedirectToAction(nameof(AllUsers));
         //}
 
-         
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> SuggestName([FromBody] string email, [FromServices] OpenAiService ai)
+        {
+            try
+            {
+                var suggestion = await ai.SuggestUserName(email);
+                return Json(new { suggestion });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = ex.Message });
+            }
+        }
+
     }
 }   

@@ -1,0 +1,190 @@
+﻿@model Ticket
+@{
+    ViewBag.Title = "Ticket Details";
+    var replies = ViewBag.Replies as List<TicketReply>;
+    bool isAdmin = User.IsInRole("Admin");
+}
+
+<h2 class="mb-3">@Model.Subject</h2>
+
+<script src="~/lib/microsoft/signalr/signalr.js"></script>
+<script>
+    const connection = new signalR.HubConnectionBuilder()
+        .withUrl("/ticketHub")
+        .build();
+
+    connection.on("TicketUpdated", function (ticketId) {
+        location.reload();
+    });
+
+    connection.start();
+</script>
+
+
+<!-- Ticket Summary -->
+<div class="card mb-3">
+    <div class="card-body">
+        <p class="mb-1">
+            <b>Status:</b>
+            <span class="badge bg-info">@Model.Status</span>
+
+            <b class="ms-3">Priority:</b>
+            <span class="badge
+                @(Model.Priority == "High" ? "bg-danger" :
+                    Model.Priority == "Low" ? "bg-secondary" : "bg-primary")">
+                @Model.Priority
+            </span>
+        </p>
+
+        <p class="mb-1">
+            <b>Created:</b> @Model.createdt?.ToString("dd-MM-yyyy HH:mm")
+        </p>
+
+        <p class="mb-0">
+            <b>Assigned To:</b>
+            @(string.IsNullOrEmpty(Model.AssignedEmail) ? "Unassigned" : Model.AssignedEmail)
+        </p>
+    </div>
+</div>
+
+<!-- Description -->
+<div class="card mb-3">
+    <div class="card-header">
+        <b>Description</b>
+    </div>
+    <div class="card-body">
+        @Model.Description
+    </div>
+</div>
+
+<!-- Attachments -->
+<div class="card mb-3">
+    <div class="card-header">
+        <b>Attachments</b>
+    </div>
+    <div class="card-body">
+        <a href="@Model.FilePath" target="_blank">
+             @Model.FileName
+        </a>
+    </div>
+</div>
+
+<!-- Admin Actions -->
+@if (isAdmin)
+{
+    <div class="card mb-3 border-danger">
+        <div class="card-header bg-danger text-white">
+            Admin Actions
+        </div>
+        <div class="card-body">
+
+            <!-- Assign + Priority -->
+            <form asp-action="Assign" method="post" class="mb-3">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="TicketId" value="@Model.Id" />
+
+                <div class="row">
+                    <div class="col-md-6 mb-2">
+                        <label class="form-label"><b>Assign To (Email)</b></label>
+                        <select name="AssignedTo" class="form-select">
+                            <option value="">-- Select User --</option>
+                            @foreach (var u in ViewBag.Users as List<SelectListItem>)
+                            {
+                                <option value="@u.Value">@u.Text</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 mb-2">
+                        <label class="form-label"><b>Change Priority</b></label>
+                        <select name="Priority" class="form-select">
+                            <option value="Low" selected="@(Model.Priority == "Low")">Low</option>
+                            <option value="Normal" selected="@(Model.Priority == "Normal")">Normal</option>
+                            <option value="High" selected="@(Model.Priority == "High")">High</option>
+                        </select>
+                    </div>
+                </div>
+
+                
+                <button type="submit" class="btn btn-danger mt-2">
+                    Assign / Update
+                </button>
+            </form>
+
+            <!-- Close Ticket -->
+            @if (Model.Status != "Closed")
+            {
+                <form asp-action="Close" method="post">
+                    <input type="hidden" name="TicketId" value="@Model.Id" />
+                    <button type="submit" class="btn btn-warning">
+                        Close Ticket
+                    </button>
+                </form>
+            }
+            @if (Model.IsBreached)
+            {
+                <span class="badge bg-danger">
+                     SLA Breached
+                </span>
+            }
+            else
+            {
+                <span class="badge bg-success">
+                     Within SLA
+                </span>
+            }
+
+        </div>
+    </div>
+}
+
+<!-- Replies -->
+<div class="card mb-3">
+    <div class="card-header">
+        <b>Replies</b>
+    </div>
+    <div class="card-body">
+        @if (replies != null && replies.Any())
+        {
+            <ul class="list-group">
+                @foreach (var r in replies)
+                {
+                    <li class="list-group-item">
+                        <small class="text-muted">@r.createdt?.ToString("dd-MM-yyyy HH:mm")</small><br />
+                        @r.ReplyText
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <div class="text-muted">No replies yet.</div>
+        }
+    </div>
+</div>
+
+<!-- Add Reply -->
+<div class="card">
+    <div class="card-header">
+        <b>Add a Reply</b>
+    </div>
+    <div class="card-body">
+        <form asp-action="AddReply" method="post" enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="TicketId" value="@Model.Id" />
+
+            <textarea name="ReplyText" class="form-control mb-2" rows="3"></textarea>
+            <div class="mb-3">
+                <label class="form-label">Attachment</label>
+                <input type="file" name="Attachment" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Submit Reply
+            </button>
+            <a asp-action="Index" class="btn btn-primary">
+                Back to List
+            </a>
+        </form>
+    </div>
+</div>

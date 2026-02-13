@@ -1,4 +1,5 @@
-﻿using UserCrudApp.Data;
+﻿using Azure.Core;
+using UserCrudApp.Data;
 using UserCrudApp.Models;
 
 namespace UserCrudApp.Helpers
@@ -7,6 +8,7 @@ namespace UserCrudApp.Helpers
     {
         private readonly RequestDelegate _next;
 
+        
         public ApiLoggingMiddleware(RequestDelegate next)
         {
             _next = next;
@@ -29,5 +31,7 @@ namespace UserCrudApp.Helpers
 
             await _next(context);
         }
+       
+
     }
 }

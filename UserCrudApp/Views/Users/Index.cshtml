@@ -20,5 +20,26 @@
             <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger btn-sm mx-1">Delete</a>
             <a asp-action="ChangePassword" class="btn btn-warning btn-sm mx-1">Change Password</a>
         </td>
+
+
+        <dx:ASPxGridView Settings-ShowGroupPanel="true" SettingsBehavior-AllowDragDrop="true"
+                         SettingsContextMenu-Enabled="true" SettingsBehavior-AllowGroup="true" SettingsBehavior-AllowSort="true"
+                         ID="ASPxGridView1"   align="left"
+                         KeyFieldName="SLNo" runat="server" EnablePagingCallbackAnimation="True"
+                         OnHtmlRowCreated="ASPxGridView1_HtmlRowCreated"
+                         AutoGenerateColumns="False" Width="100%">
+
+            <Columns>
+
+                <dx:GridViewDataTextColumn Settings-AllowDragDrop="True" Width="150" FieldName="BatchRemark" Caption="Batch Remark" VisibleIndex="1">
+                    <Settings ShowFilterRowMenu="True" ShowFilterRowMenuLikeItem="True" ShowInFilterControl="True" AutoFilterCondition="Contains" />
+                </dx:GridViewDataTextColumn>
+
+                <dx:GridViewDataTextColumn Settings-AllowDragDrop="True" Width="100px" FieldName="TotalMaterialGenerated" Caption="Total Price Generated" VisibleIndex="1">
+                    <Settings ShowFilterRowMenu="True" ShowFilterRowMenuLikeItem="True" ShowInFilterControl="True" AutoFilterCondition="Contains" />
+                </dx:GridViewDataTextColumn>
+
+        </dx:ASPxGridView>
+
     </tr>
 </table>

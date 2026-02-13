@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Support Chatbot";
+}
+<h2>Ask the Support Bot</h2>
+<textarea id="chatLog" class="form-control mb-2" rows="10" readonly></textarea>
+<input id="userInput" class="form-control mb-2" type="text" placeholder="Ask a question..." />
+<button onclick="sendMsg()" class="btn btn-primary">Send</button>
+<script>
+    function appendMsg(txt) {
+        document.getElementById("chatLog").value += txt + "\n";
+    }
+    function sendMsg() {
+        let q = document.getElementById("userInput").value;
+        appendMsg('You: ' + q);
+        fetch('/Support/ChatApi', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(q)
+        })
+        .then(r=>r.json())
+        .then(d => appendMsg('Bot: ' + d.answer));
+        document.getElementById("userInput").value = "";
+    }
+</script>

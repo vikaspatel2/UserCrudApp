@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using UserCrudApp.Data;
 using UserCrudApp.Helpers;
+using UserCrudApp.Hubs;
+using UserCrudApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -73,9 +75,15 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+builder.Services.AddHostedService<EmailQueueConsumer>();
 
 builder.Services.AddHealthChecks();
 
+builder.Services.AddHttpClient<OpenAiService>();
+
+builder.Services.AddScoped<IEmailService, EmailService>();
+
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 
@@ -101,6 +109,9 @@ app.UseSwaggerUI();
 app.UseHealthChecks("/health");
 
 app.UseMiddleware<ApiLoggingMiddleware>();
+
+app.MapHub<TicketHub>("/ticketHub");
+
 
 app.MapControllerRoute(
     name: "default",

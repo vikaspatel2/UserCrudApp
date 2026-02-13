@@ -1,0 +1,6 @@
+C:\Users\vikas\source\repos\UserCrudApp\EmailWorker\obj\Debug\net10.0\EmailWorker.csproj.AssemblyReference.cache
+C:\Users\vikas\source\repos\UserCrudApp\EmailWorker\obj\Debug\net10.0\EmailWorker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vikas\source\repos\UserCrudApp\EmailWorker\obj\Debug\net10.0\EmailWorker.AssemblyInfoInputs.cache
+C:\Users\vikas\source\repos\UserCrudApp\EmailWorker\obj\Debug\net10.0\EmailWorker.AssemblyInfo.cs
+C:\Users\vikas\source\repos\UserCrudApp\EmailWorker\obj\Debug\net10.0\EmailWorker.csproj.CoreCompileInputs.cache
+C:\Users\vikas\source\repos\UserCrudApp\EmailWorker\obj\Debug\net10.0\EmailWorker.sourcelink.json
